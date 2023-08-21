@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
   searchIcon.addEventListener('click', function () {
     searchBar.classList.toggle('hidden');
     if (!searchBar.classList.contains('hidden')) {
-      searchBar.focus(); // Focus on the input field when it's shown
+      searchBar.focus(); 
     }
   });
 });
@@ -51,13 +51,13 @@ document.addEventListener('DOMContentLoaded', function () {
   const buttonLeft = document.getElementById('buttonarrowleft');
   buttonLeft.addEventListener('click', function () {
       currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-      imgElement.src = `images/${images[currentImageIndex]}`;
+      imgElement.src = `assets/${images[currentImageIndex]}`;
   });
 
   const buttonRight = document.getElementById('buttonarrowright');
   buttonRight.addEventListener('click', function () {
       currentImageIndex = (currentImageIndex + 1) % images.length;
-      imgElement.src = `images/${images[currentImageIndex]}`;
+      imgElement.src = `assets/${images[currentImageIndex]}`;
   });
 });
 

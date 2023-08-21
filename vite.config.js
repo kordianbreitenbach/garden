@@ -1,3 +1,3 @@
 export default {
-    base: '/gardenPage/',
+    base: '/garden/',
   }
